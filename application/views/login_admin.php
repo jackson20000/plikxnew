@@ -13,16 +13,16 @@
 </script>
 </head>
 <body>
-<!-- <?php if(!$error) { ?>
+<?php if(!$error) { ?>
     <div class="alert alert-danger container warn" style="margin-top:10px;">
     Username or Password is <strong>incorrect!</strong>.
     </div>
     <?php
     }
-    ?> -->
+    ?>
 <div class="login">
 	<h1>Login</h1>
-    <form name ="userinput" action="" method="post">
+    <form name ="userinput" action="<?php echo base_url(); ?>login/verify" method="post">
     	<input class="txtcolor" type="text" name="username" placeholder="Username" required="required" />
         <input class="txtcolor" type="password" name="password" placeholder="Password" required="required" style="margin-top: 10px;" />
         <input type="submit" class="btn btn-primary btn-block btn-large margintop" value="Let me in.">

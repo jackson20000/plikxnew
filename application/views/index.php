@@ -537,8 +537,8 @@ li.nav-toggle {
                     </a></li>
 
                   <div id="responsive-nav" class="responsive-nav">
-                      <li><a href="#" class="download button">Log in</a></li>
-                      <li><a href="#" class="download button">Join us</a></li>
+                      <li><a href="home/signin" class="download button">Log in</a></li>
+                      <li><a href="home/join" class="download button">Join us</a></li>
                   </div>
 
                   <li class="nav-toggle"><a href="javascript:void(0);" onclick="showNav();"><img src="assets/img/fb.png" alt=""></a></li>
