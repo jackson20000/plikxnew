@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
 * {
   box-sizing: border-box;
 }
@@ -14,10 +13,6 @@
   clear: both;
 }
 
-body {
-  font-family: montserrat, arial, verdana;
-}
-
 .title {
   margin-bottom: 30px;
   text-align: center;
@@ -25,7 +20,7 @@ body {
 }
 
 .card {
-  max-width: 500px;
+  max-width: 600px;
   width: 90%;
   background: white;
   margin: 30px auto;
@@ -51,26 +46,9 @@ body {
   text-align: center;
 }
 
-.btn {
-  width: 100px;
-  background: black;
-  font-weight: bold;
-  font-size: 14px;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 2px;
-  padding: 10px 5px;
-  margin: 10px 5px;
-}
-.btn:hover {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px black;
-}
 
 .bar__container {
   width: 100%;
-  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -82,7 +60,7 @@ body {
 .bar li {
   list-style-type: none;
   float: left;
-  width: 20%;
+  width: 33.3%;
   position: relative;
   text-align: center;
   font-size: 9px;
@@ -133,4 +111,148 @@ body {
 }
 .bar li.active:first-child + li:after:not(.active) {
   background: white;
+}
+
+
+
+
+
+
+
+    .custom{
+          border: 1.5px solid black!important;
+              border-radius: 25px!important;
+              height: 55px;
+    }
+
+
+
+     @media only screen and (max-width: 680px){
+      body {width:100%;
+        margin-top: 10px;
+margin-left: 0px;
+       }
+     }
+    input[type="text"],select{
+
+        width: 100%;
+        border: 1.5px solid black;
+        border-radius: 25px;
+        margin: 20px 0;
+        outline: none;
+        padding: 25px;
+        box-sizing: border-box;
+        transition: 0.3s;
+
+
+
+    }
+     @media only screen and (max-width: 680px){
+
+    input[type="text"]{
+         width: 100%;padding:10px;
+       border-radius: 15px;
+
+     }}
+    label{
+      font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    }
+     @media only screen and (max-width: 680px){
+       label{
+
+         font-size: 15px;
+
+         }
+         .card{
+          padding: 20px 0;
+         }
+       }
+
+    .btnn{text-align: center;
+      margin-top: 25px;
+      background: none;
+      border: .5px solid black;
+      border-radius: 25px;
+      color: black;
+      font-size: .8em;
+      font-weight: bold;
+      padding: 1em 3em;
+      text-transform: uppercase;}
+      @media only screen and (max-width: 680px){
+        .btnn{
+          margin-top: 10px;
+          border-radius: 25px;
+          font-size: .7em;
+        }
+ }
+    .btnn:hover {
+      color:white;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      background: black;
+    }
+
+.radio{
+display: block;
+text-align: center;
+}
+.radio label {
+  font-size: 20px;
+  line-height: 26px;
+  padding: 0;
+}
+
+.radio input[type="radio"] + label {
+  color: grey;
+  position: relative;
+}
+
+.radio input[type="radio"] + label::before {
+  /* Outer Circle of radio button */
+  border: 1px solid grey;
+  content: ' ';
+  display: none;
+  margin-right: 5px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  transition: border 0.15s ease-in-out;
+}
+
+.radio input[type="radio"] + label::after {
+  /* Inner Circle of radio button */
+  border: 0px solid orange;
+  content: ' ';
+  background: transparent;
+  display: none;
+  margin-right: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 49px;
+  transition: border 0.15s ease-in-out;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* When button is active */
+.radio input[type="radio"]:checked + label::after {
+  background: black;
+}
+
+.radio input[type="radio"]:checked + label::before {
+  border-color: black;
+}
+
+.radio input[type="radio"]:checked + label {
+  color: black;
 }
