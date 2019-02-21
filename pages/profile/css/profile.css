@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+.image{
+  margin-top: 90px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /*max-width: 300px;*/
+  font-family: arial;
+  margin: auto;
+}
+
+.card .contain {
+  padding: 0 16px;
+  
+}
+
+.card .contain::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card .title {
+  color: grey;
+  font-size: 18px;
+}
+.gender{
+  margin-top: 15px;
+  margin-bottom:15px;
+  display: inline-flex;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.bottom-margin{
+  margin-bottom: 20px;
+}
+.card button:hover, a:hover {
+  opacity: 0.7;
+}
+.viewbtn{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+
+  background:white;
+      border: .5px solid black;
+      border-radius: 25px;
+      color: black;
+      font-size: .8em;
+      font-weight: bold;
+      padding: 1em 3em;
+      text-transform: uppercase;
+
+}
+.viewbtn:hover{
+  background: black;
+  color:white;
+  transform:translateY(3px);
+  transition:all 0.3s;
+}
+.image{
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .image{
+  margin-top: 60px;
+}
+}

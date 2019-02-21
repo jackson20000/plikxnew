@@ -1,0 +1,37 @@
+/*! CSS Used from: http://localhost/plikx1/assets/home/style.css */
+nav{display:block;}
+a{background-color:transparent;}
+a:active,a:hover{outline:0;}
+img{border:0;}
+*,*:before,*:after{box-sizing:inherit;}
+.button{display:inline-block;padding:20px 60px;color:black;text-align:center;font-size:14px;font-weight:600;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:white;border-radius:4px;cursor:pointer;box-sizing:border-box;transition:all 0.2s ease;box-shadow:0 20px 12px -15px rgba(0, 0, 0, 0.2);}
+.button:hover,.button:active,.button:focus{outline:0;transform:scale(1.01);transform:translateY(3px);}
+a{color:white;text-decoration:none;outline:0;}
+a:hover,a:focus{color:#F012BE;}
+.main-nav{display:flex;margin-top:20px;}
+.main-nav li{list-style:none;}
+.main-nav li:first-child{margin-right:auto;}
+.main-nav a{color:white;display:block;border-radius:4px;padding:10px 50px;text-decoration:none;font-weight:900;text-transform:uppercase;transition:all 0.2s ease;}
+.main-nav a:hover,.main-nav a:active{color:white;}
+a.download{background:white;color:#00adff;box-shadow:0 12px 10px -10px rgba(0, 0, 0, 0.2);}
+::selection{background:#FFF498;}
+::-moz-selection{background:#FFF498;}
+img::selection{background:transparent;}
+img::-moz-selection{background:transparent;}
+.main-nav{display:flex;margin-top:20px;}
+.main-nav li{padding:5px;list-style:none;}
+.main-nav a{color:white;display:block;border-radius:4px;padding:10px 50px;text-decoration:none;font-weight:900;text-transform:uppercase;}
+a.download{background:none;border:.5px solid black;border-radius:25px;color:black;font-size:.8em;font-weight:bold;padding:1em 3em;text-transform:uppercase;}
+.download:hover{color:white;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;background:black;}
+li.nav-toggle{display:none;}
+.responsive-nav{width:auto;}
+.responsive-nav li{display:inline-block;}
+@media only screen and (max-width: 680px){
+.responsive-nav{display:none;}
+}
+#header img{max-width:500px;width:100%;}
+@media only screen and (max-width: 768px){
+.download{padding:.4em .4em;}
+}
+.button{display:inline-block;padding:20px 60px;color:black;text-align:center;font-size:14px;font-weight:600;text-transform:none;text-decoration:none;white-space:nowrap;background-color:white;border-radius:25px;cursor:pointer;box-sizing:border-box;transition:all 0.2s ease;box-shadow:0 20px 12px -15px rgba(0, 0, 0, 0.2);}
+.button:hover,.button:active,.button:focus{outline:0;transform:scale(1.01);transform:translateY(3px);}

@@ -1,69 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jesse Showalter Starter Kit</title>
+    <title>Plikx | Photographer Company</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="assets/css/main.min.css" />
     <link rel="stylesheet" href="assets/home/style.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/easy-autocomplete.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/easy-autocomplete.themes.min.css">
 </head>
 <body>
+  <header>
+        <div class="container">
+          <nav id="navigation">
+            <a href="#" class="logo"><img src="assets/img/logo.png"></a>
+            <a aria-label="mobile menu" class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+              <ul class="menu-left">
+                <li><a href="#about">Login</a></li>
+                <li><a href="#exp">SignUp</a></li>
+              </ul>
+          </nav>
+        </div>
+    </header>
+
   <section id="header">
       <div class="wrapper">
-
-          <nav>
-              <ul class="main-nav">
-                  <li><a href="#" class="logo"><png width="139" height="25"  ><img src="assets/img/fb.png" alt="">
-                    </a></li>
-
-                  <div id="responsive-nav" class="responsive-nav">
-                      <li><a href="home/signin" class="download button">Log in</a></li>
-                      <li><a href="home/join" class="download button">Join us</a></li>
-                  </div>
-
-                  <li class="nav-toggle"><a href="javascript:void(0);" onclick="showNav();"><img src="assets/img/fb.png" alt=""></a></li>
-              </ul>
-
-          </nav>
-
+        <div class="logoimg">
+          <img src="assets/img/logo1.png">
+        </div>
           <article>
-
           <h1>We frames your <br>beautiful life</h1>
           <p>make a shoot with the world's best freelancers, professionals or plikx team </p>
-
-
       </article>
       <div class="inputWithIcon">
-        <input type="text" placeholder="Location">
+        <input type="text" placeholder="Location" id="search">
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </div>
       </div>
   </section>
 
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Dream</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="assets/css/main.min.css" />
-<body>
   <h3>Grab your shoot !</h3>
-
-
 
 <section id="discount">
     <div class="wrapper">
 
         <div class="discountLayout">
-
-
             <picture>
                 <source media="(min-width: 681px)" srcset="assets/img/pi4.png">
                 <source media="(max-width:   680px)" srcset="assets/img/pi1.png">
@@ -144,5 +129,50 @@
 </div>
 </section>
 <script type="text/javascript" src="assets/home/script.js"></script>
+<script type="text/javascript" src="assets/nav.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script type="text/javascript" src="assets/js/jquery.easy-autocomplete.min.js"></script>
+<script type="text/javascript">
+  var options = {
+    // url: function(phrase) { 
+    //     if (phrase !== "") {
+    //         return "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + phrase + "&key=AIzaSyDge58kDZRSDquz16IhEFQZMzHjMpFWwlw&sessiontoken=1234567890";    
+    //     } else {
+    //         //duckduckgo doesn't support empty strings
+    //         return "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=&key=AIzaSyDge58kDZRSDquz16IhEFQZMzHjMpFWwlw&sessiontoken=1234567890";
+    //     }
+    // },
+    url: "assets/cities.json",
+    getValue: "name",
+
+    template: {
+        type: "description",
+        fields: {
+            description: "state"
+        }
+    },
+
+    list: {
+        maxNumberOfElements: 4,
+        match: {
+            enabled: true
+        },
+        sort: {
+            enabled: true
+        },
+        showAnimation: {
+            type: "slide",
+            time: 300
+        },
+        hideAnimation: {
+            type: "slide",
+            time: 300
+        }
+    },
+    theme: "round"
+};
+
+$("#search").easyAutocomplete(options);
+</script>
 </body>
 </html>

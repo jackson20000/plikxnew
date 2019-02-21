@@ -1,0 +1,12 @@
+/*! CSS Used from: http://localhost/plikx1/assets/home/style.css */
+section{display:block;}
+a{background-color:transparent;}
+a:active,a:hover{outline:0;}
+a{color:white;text-decoration:none;outline:0;}
+a:hover,a:focus{color:#F012BE;}
+::selection{background:#FFF498;}
+::-moz-selection{background:#FFF498;}
+#footer{float:bottom;position:absolute;left:0;background:black;width:100%;padding:10px;font-family:Verdana;font-size:16px;letter-spacing:1px;color:#fff;}
+#footer span{display:inline-block;min-width:230px;margin:10px 0 10px 0;text-align:center;}
+#footer span a{text-decoration:none;color:white;transition:all 0.2s ease-in;}
+#footer span a:hover{color:gray;}

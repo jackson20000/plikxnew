@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/main.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/header.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/footer.css" />
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
@@ -141,6 +143,22 @@ a {float: left;
 }
 </style>
 <body>
+  <div>
+    <nav>
+              <ul class="main-nav">
+                  <li><a href="<?php echo base_url() ?>" class="logo"><png width="139" height="25"  ><img src="<?php echo base_url() ?>assets/img/fb.png" alt="">
+                    </a></li>
+
+                  <div id="responsive-nav" class="responsive-nav">
+                      <li><a href="home/signin" class="download button">Log in</a></li>
+                      <li><a href="home/join" class="download button">Join us</a></li>
+                  </div>
+
+                  <li class="nav-toggle"><a href="javascript:void(0);" onclick="showNav();"><img src="assets/img/fb.png" alt=""></a></li>
+              </ul>
+
+          </nav>
+  </div>
 <div class="login-page">
   <h1 class="Form-title">Log in</h1>
 
@@ -167,6 +185,15 @@ a {float: left;
     </form>
   </div>
 </div>
+<section id="footer" style="text-align: center;">
+        <div class="wrapper">
+
+      <span><a> 2018 plikx, Inc.</a></span>
+    <span><a href="mailto:example@example.com">Privacy</a></span>
+      <span><a href="mailto:example@example.com">Terms</a></span>
+
+</div>
+</section>
 <script>
 $('.message a').click(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
